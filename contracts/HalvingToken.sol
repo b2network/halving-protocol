@@ -18,6 +18,8 @@ contract HalvingToken is
 
     uint256 private _currentBlock;
 
+    event Test(uint256 indexed cycle, uint256 reward, uint256 blockNumber);
+
     /// @notice Initializes the contract with a name, symbol, cap
     constructor()
         ERC20("BTC Halving Token", "BTCHV")
