@@ -39,8 +39,6 @@ contract HalvingToken is
 
         _currentBlock++;
         _mint(msg.sender, currentReward);
-
-        emit Test(currentCycle, currentReward, _currentBlock);
     }
 
     /// @dev Internal function to update state during transfers, respecting the cap
